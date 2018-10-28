@@ -12,8 +12,8 @@
 				Hybrid\Comment\render_time()
 			)
 		] ) ?>
-		<?php Hybrid\Comment\display_edit_link( [ 'before' => Mythic\sep() ] ) ?>
-		<?php Hybrid\Comment\display_reply_link( [ 'before' => Mythic\sep() ] ) ?>
+		<?php Hybrid\Comment\display_edit_link( [ 'before' => CXL\sep() ] ) ?>
+		<?php Hybrid\Comment\display_reply_link( [ 'before' => CXL\sep() ] ) ?>
 	</header>
 
 	<div class="comment__content">

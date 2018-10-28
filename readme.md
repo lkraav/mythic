@@ -18,10 +18,10 @@ You should feel reasonably comfortable using the command line. The theme tries t
 
 ## Documentation
 
-Check out the [project wiki](https://github.com/justintadlock/mythic/wiki) to learn how to install and set up the theme.
+Check out the [project wiki](https://github.com/cxl/cxl/wiki) to learn how to install and set up the theme.
 
 ## Copyright and License
 
 Mythic is licensed under the [GNU GPL](https://www.gnu.org/licenses/gpl-2.0.html), version 2 or later.
 
-2018 &copy; Justin Tadlock.
+2018 &copy; CXL.

@@ -10,7 +10,7 @@
 				Hybrid\Comment\render_time()
 			)
 		] ) ?>
-		<?php Hybrid\Comment\display_edit_link( [ 'before' => Mythic\sep() ] ) ?>
+		<?php Hybrid\Comment\display_edit_link( [ 'before' => CXL\sep() ] ) ?>
 	</div>
 
 <?php /* No closing </li> is needed.  WordPress will know where to add it. */ ?>

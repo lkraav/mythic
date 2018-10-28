@@ -5,11 +5,11 @@
  * Any includes or imports should be handled in this file. The final result gets
  * saved back into `dist/js/customize-preview.js`.
  *
- * @package   Mythic
- * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright 2018 Justin Tadlock
+ * @package   CXL
+ * @author    CXL <leho@conversionxl.com>
+ * @copyright 2018 CXL
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://themehybrid.com/themes/mythic
+ * @link      https://conversionxl.com
  */
 
 import { customHeader } from './customize-preview/custom-header';

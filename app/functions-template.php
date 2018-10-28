@@ -5,14 +5,14 @@
  * This file holds template tags for the theme. Template tags are PHP functions
  * meant for use within theme templates.
  *
- * @package   Mythic
- * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright 2018 Justin Tadlock
+ * @package   CXL
+ * @author    CXL <leho@conversionxl.com>
+ * @copyright 2018 CXL
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://themehybrid.com/themes/mythic
+ * @link      https://conversionxl.com
  */
 
-namespace Mythic;
+namespace CXL;
 
 /**
  * Returns the metadata separator.
@@ -25,7 +25,7 @@ namespace Mythic;
 function sep( $sep = '' ) {
 
 	return apply_filters(
-		'mythic/sep',
+		'cxl/sep',
 		sprintf(
 			' <span class="sep">%s</span> ',
 			$sep ?: esc_html_x( '&middot;', 'meta separator' )

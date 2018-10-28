@@ -1,10 +1,10 @@
 {
-	"name": "mythic",
+	"name": "cxl",
 	"version": "1.0.0",
-	"description": "Mythic is a next-generation starter theme designed to help theme authors write elegant, intelligent, and modern code.",
-	"author": "Justin Tadlock",
+	"description": "",
+	"author": "CXL",
 	"license": "GPL-2.0+",
-	"homepage": "https://themehybrid.com/themes/mythic",
+	"homepage": "https://conversionxl.com",
 	"main": "resources/js/app.js",
 	"scripts": {
 		"build": "npm run prod && npm run i18n && npm run export",
@@ -25,10 +25,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/justintadlock/mythic.git"
+		"url": "git+https://github.com/cxl/cxl.git"
 	},
 	"bugs": {
-		"url": "https://github.com/justintadlock/mythic/issues"
+		"url": "https://github.com/cxl/cxl/issues"
 	},
 	"devDependencies": {
 		"browser-sync": "^2.24.7",

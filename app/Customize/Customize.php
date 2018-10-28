@@ -6,18 +6,18 @@
  * Customization API. This is the place to set up all of your theme options for
  * the customizer.
  *
- * @package   Mythic
- * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright 2018 Justin Tadlock
+ * @package   CXL
+ * @author    CXL <leho@conversionxl.com>
+ * @copyright 2018 CXL
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://themehybrid.com/themes/mythic
+ * @link      https://conversionxl.com
  */
 
-namespace Mythic\Customize;
+namespace CXL\Customize;
 
 use WP_Customize_Manager;
 use Hybrid\Contracts\Bootable;
-use function Mythic\asset;
+use function CXL\asset;
 
 /**
  * Handles setting up everything we need for the customizer.
@@ -165,7 +165,7 @@ class Customize implements Bootable {
 	public function controlsEnqueue() {
 
 		wp_enqueue_script(
-			'mythic-customize-controls',
+			'cxl-customize-controls',
 			asset( 'js/customize-controls.js' ),
 			[ 'customize-controls' ],
 			null,
@@ -173,7 +173,7 @@ class Customize implements Bootable {
 		);
 
 		wp_enqueue_style(
-			'mythic-customize-controls',
+			'cxl-customize-controls',
 			asset( 'css/customize-controls.css' ),
 			[],
 			null
@@ -190,7 +190,7 @@ class Customize implements Bootable {
 	public function previewEnqueue() {
 
 		wp_enqueue_script(
-			'mythic-customize-preview',
+			'cxl-customize-preview',
 			asset( 'js/customize-preview.js' ),
 			[ 'customize-preview' ],
 			null,

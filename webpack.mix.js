@@ -7,10 +7,10 @@
  *
  * @link https://laravel.com/docs/5.6/mix
  *
- * @package   Mythic
- * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright 2018 Justin Tadlock
- * @link      https://themehybrid.com/themes/mythic
+ * @package   CXL
+ * @author    CXL <leho@conversionxl.com>
+ * @copyright 2018 CXL
+ * @link      https://conversionxl.com
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
  */
 

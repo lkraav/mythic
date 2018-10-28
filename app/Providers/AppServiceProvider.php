@@ -6,17 +6,17 @@
  * They allow you to add bindings to the container on registration and boot them
  * once everything has been registered.
  *
- * @package   Mythic
- * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright 2018 Justin Tadlock
+ * @package   CXL
+ * @author    CXL <leho@conversionxl.com>
+ * @copyright 2018 CXL
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://themehybrid.com/themes/mythic
+ * @link      https://conversionxl.com
  */
 
-namespace Mythic\Providers;
+namespace CXL\Providers;
 
 use Hybrid\Tools\ServiceProvider;
-use Mythic\Customize\Customize;
+use CXL\Customize\Customize;
 
 /**
  * App service provider.
@@ -40,7 +40,7 @@ class AppServiceProvider extends ServiceProvider {
 		$this->app->singleton( Customize::class );
 
 		// Bind the Laravel Mix manifest for cache-busting.
-		$this->app->singleton( 'mythic/mix', function() {
+		$this->app->singleton( 'cxl/mix', function() {
 
 			$file = get_theme_file_path( 'dist/mix-manifest.json' );
 

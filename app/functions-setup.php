@@ -10,14 +10,14 @@
  * things in this file. Those APIs should be used instead of attempting to use
  * `remove_action()`.
  *
- * @package   Mythic
- * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright 2018 Justin Tadlock
+ * @package   CXL
+ * @author    CXL <leho@conversionxl.com>
+ * @copyright 2018 CXL
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://themehybrid.com/themes/mythic
+ * @link      https://conversionxl.com
  */
 
-namespace Mythic;
+namespace CXL;
 
 /**
  * Set up theme support.  This is where calls to `add_theme_support()` happen.
@@ -37,7 +37,7 @@ add_action( 'after_setup_theme', function() {
 	$GLOBALS['content_width'] = 750;
 
 	// Load theme translations.
-	load_theme_textdomain( 'mythic', get_parent_theme_file_path( 'resources/lang' ) );
+	load_theme_textdomain( 'cxl', get_parent_theme_file_path( 'resources/lang' ) );
 
 	// Automatically add the `<title>` tag.
 	add_theme_support( 'title-tag' );
@@ -224,7 +224,7 @@ add_action( 'init', function() {
 	set_post_thumbnail_size( 178, 100, true );
 
 	// Register custom image sizes.
-	add_image_size( 'mythic-medium', 750, 422, true );
+	add_image_size( 'cxl-medium', 750, 422, true );
 
 }, 5 );
 

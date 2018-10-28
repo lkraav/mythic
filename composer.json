@@ -1,20 +1,19 @@
 {
-	"name"        : "justintadlock/mythic",
+	"name"        : "cxl/cxl",
 	"type"        : "wordpress-theme",
-	"description" : "Mythic is a next-generation starter theme designed to help theme authors write elegant, intelligent, and modern code.",
+	"description" : "",
 	"keywords"    : ["wordpress"],
-	"homepage"    : "https://themehybrid.com/themes/mythic",
+	"homepage"    : "https://conversionxl.com",
 	"license"     : "GPL-2.0-or-later",
 	"authors"     : [
 		{
-			"name"    : "Justin Tadlock",
-			"email"   : "justintadlock@gmail.com",
-			"homepage": "https://themehybrid.com"
+			"name"    : "CXL",
+			"email"   : "leho@conversionxl.com"
 		}
 	],
 	"autoload"    : {
 		"psr-4" : {
-			"Mythic\\" : "app/"
+			"CXL\\" : "app/"
 		}
 	},
         "require": {

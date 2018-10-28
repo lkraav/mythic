@@ -6,14 +6,14 @@
  * to run. Classes utilize the PSR-4 autoloader in Composer which is defined in
  * `composer.json`.
  *
- * @package   Mythic
- * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright 2018 Justin Tadlock
+ * @package   CXL
+ * @author    CXL <leho@conversionxl.com>
+ * @copyright 2018 CXL
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://themehybrid.com/themes/mythic
+ * @link      https://conversionxl.com
  */
 
-namespace Mythic;
+namespace CXL;
 
 # ------------------------------------------------------------------------------
 # Run the Composer autoloader.

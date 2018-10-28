@@ -5,14 +5,14 @@
  * This file holds some setup actions for scripts and styles as well as a helper
  * functions for work with assets.
  *
- * @package   Mythic
- * @author    Justin Tadlock <justintadlock@gmail.com>
- * @copyright 2018 Justin Tadlock
+ * @package   CXL
+ * @author    CXL <leho@conversionxl.com>
+ * @copyright 2018 CXL
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://themehybrid.com/themes/mythic
+ * @link      https://conversionxl.com
  */
 
-namespace Mythic;
+namespace CXL;
 
 use Hybrid\App;
 
@@ -36,10 +36,10 @@ add_action( 'wp_enqueue_scripts', function() {
 	}
 
 	// Enqueue theme scripts.
-	wp_enqueue_script( 'mythic-app', asset( 'js/app.js' ), null, null, true );
+	wp_enqueue_script( 'cxl-app', asset( 'js/app.js' ), null, null, true );
 
 	// Enqueue theme styles.
-	wp_enqueue_style( 'mythic-screen', asset( 'css/screen.css' ), null, null );
+	wp_enqueue_style( 'cxl-screen', asset( 'css/screen.css' ), null, null );
 
 } );
 
@@ -53,7 +53,7 @@ add_action( 'wp_enqueue_scripts', function() {
 add_action( 'enqueue_block_editor_assets', function() {
 
 	// Enqueue theme editor styles.
-	wp_enqueue_style( 'mythic-editor', asset( 'css/editor.css' ), null, null );
+	wp_enqueue_style( 'cxl-editor', asset( 'css/editor.css' ), null, null );
 
 	// Unregister core block and theme styles.
 	wp_deregister_style( 'wp-block-library' );
@@ -80,7 +80,7 @@ add_action( 'enqueue_block_editor_assets', function() {
 function asset( $path ) {
 
 	// Get the Laravel Mix manifest.
-	$manifest = App::resolve( 'mythic/mix' );
+	$manifest = App::resolve( 'cxl/mix' );
 
 	// Make sure to trim any slashes from the front of the path.
 	$path = '/' . ltrim( $path, '/' );
