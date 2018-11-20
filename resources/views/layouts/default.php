@@ -21,6 +21,22 @@
 
 		<?php the_custom_header_markup() ?>
 
-		<?php Hybrid\View\display( 'nav/menu', 'primary', [ 'location' => 'primary' ] ) ?>
+		<?php $view->insert( 'nav/menu/default', [ 'location' => 'primary' ] ) ?>
 
 	</header>
+
+	<?php echo $view->section( 'content' ); ?>
+
+	<footer class="app-footer">
+
+		<p class="app-footer__credit">
+			<?php esc_html_e( 'Powered by crazy ideas and passion.' ) ?>
+		</p>
+
+	</footer>
+
+</div><!-- .app -->
+
+<?php wp_footer() ?>
+</body>
+</html>

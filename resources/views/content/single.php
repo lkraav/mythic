@@ -1,3 +1,5 @@
+<?php $view->layout( 'layouts/default' ); ?>
+
 <div class="app-content">
 
 	<main id="main" class="app-main">
@@ -6,7 +8,7 @@
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php Hybrid\View\display( 'entry/single', Hybrid\Post\hierarchy() ) ?>
+				<?php $view->insert( 'entry/single/default' ); ?>
 
 				<?php comments_template() ?>
 
@@ -16,6 +18,6 @@
 
 	</main>
 
-	<?php Hybrid\View\display( 'sidebar', 'primary', [ 'sidebar' => 'primary' ] ) ?>
+	<?php $view->insert( 'sidebar/default', [ 'sidebar' => 'primary' ] ) ?>
 
 </div>

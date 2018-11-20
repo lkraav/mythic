@@ -8,13 +8,13 @@
 
 		<h2 class="comments__title"><?php comments_number() ?></h2>
 
-		<?php Hybrid\View\display( 'nav/pagination', 'comments' ) ?>
+		<?php $view->insert( 'nav/pagination/comments' ) ?>
 
 		<ol class="comments__list">
 
 			<?php wp_list_comments( [
-				'callback' => function( $comment, $args, $depth ) {
-					Hybrid\View\display( 'comment', Hybrid\Comment\hierarchy(), compact( 'comment', 'args', 'depth' ) );
+				'callback' => function( $comment, $args, $depth ) use ( $view ) {
+					$view->insert( 'comment', compact( 'comment', 'args', 'depth' ) );
 				}
 			] ) ?>
 

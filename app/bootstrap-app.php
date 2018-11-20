@@ -20,7 +20,7 @@
 # this instance via the `\Hybrid\app()` function or `\Hybrid\App` static class
 # after the application has booted.
 
-$cxl = new \Hybrid\Core\Application();
+$cxl = new \CXL\Application();
 
 # ------------------------------------------------------------------------------
 # Register service providers with the application.

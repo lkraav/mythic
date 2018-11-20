@@ -1,3 +1,5 @@
+<?php $view->layout( 'layouts/default' ); ?>
+
 <div class="app-content">
 
 	<main id="main" class="app-main">
